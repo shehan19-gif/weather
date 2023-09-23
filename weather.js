@@ -5,7 +5,7 @@
 async function fetchData(city) {
 		
 	//fetch function
-	const stepOne = await fetch(`http://localhost:8080/${city}`);
+	const stepOne = await fetch(`https://weather-api-efqy.onrender.com/${city}`);
 	const stepTwo = await stepOne.json();
 	return stepTwo;
 }
