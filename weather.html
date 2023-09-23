@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--favicon-->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		
+		<!--link css-->
+		<link rel="stylesheet" href="weather.css">
+		
+		<!--bootstrap icons-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		
+		<!--javascript-->
+		<script>
+			function displayDate() {
+				setInterval(function() {
+					document.getElementById('date').innerHTML = new Date();
+				}, 1000);
+			}
+			
+			displayDate();
+		</script>
+		
+		<!--fontawesome-->
+		
+	</head>
+	<body>
+		<div id="container">
+			<!-- heading -->
+			
+			<header>
+				<h2>Weather Application</h2>
+				<p id="date"></p>
+			</header>
+			
+			<!-- search bar -->
+			
+			<div id="search_bar">
+				<input type="text" id="search" placeholder="Search your city ..." />
+				<button id="find">search</button>
+			</div>
+		
+			<!-- weather data -->
+			
+			<main>
+				
+				<div class="card primary">
+					<div class="section section_1">
+						<div class="main_temp">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="main_image" />
+							<h1 class="main_temp_assign"><span class="main_temp_val"></span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="main_details">
+							<h1><span class="main_city"></span></h1>
+							<h3><i class="bi bi-globe-americas"></i>&nbsp;<span class="main_country"></span></h3>
+							<p><i class="bi bi-globe"></i>&nbsp;Latitude:&nbsp;<span class="main_latitude"></span></p>
+							<p><i class="bi bi-globe"></i>&nbsp;Longitude:&nbsp;<span class="main_longitude"></span></p>
+						</div>
+					</div>
+					<div class="section section_2">
+						<p>Condition:&nbsp;<span class="main_description"></span></p>
+						<p>Description:&nbsp;<span class="main_brief_description"></span></p>
+					</div>
+					<div class="section section_3">
+						<p><i class="bi bi-thermometer-half"></i>&nbsp;Temperature Feels Like(&#8451;):&nbsp;<span class="main_feels"></span></p>
+						<p><i class="bi bi-droplet-fill"></i>&nbsp;Humidity(%):&nbsp;<span class="main_humidity"></span></p>
+						<p><i class="bi bi-speedometer2"></i>&nbsp;Pressure(hPa):&nbsp;<span class="main_pressure"></span></p>
+					</div>
+					<div class="section section_4">
+						<p><i class="bi bi-wind"></i>&nbsp;Wind Speed(meter/sec):&nbsp;<span class="main_wind_speed"></span></p>
+						<p><i class="bi bi-arrow-90deg-right"></i>&nbsp;Degree(meteorological):&nbsp;<span class="main_wind_degree"></span></p>
+					</div>
+				</div>
+				
+				<div class="card secondary">
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+					<!-- separate -->
+					<div class="nutshell">
+						<div class="part_1">
+							<img src="http://openweathermap.org/img/wn/04n@2x.png" class="image" />
+							<h1 class="temp"><span class="temp_val">28</span>&nbsp;<span class="celcius">&#8451;</span></h1>
+						</div>
+						<div class="part_2">
+							<div class="small_details">
+								<h2 class="city">Badulla</h2>
+								<h4 class="country">LK</h4>
+							</div>
+							<div class="mapping_data">
+								<p class="longitude">Longitude: <span class="lon_val"></span></p>
+								<p class="latitude">Latitude: <span class="lat_val"></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<!-- footer -->
+			
+			<footer>
+				<p>Made With &hearts; By room8</p>
+			</footer>
+		</div>
+		
+		<!-- javascript -->
+		<script src="weather.js"></script>
+	</body>
+</html>
