@@ -44,30 +44,6 @@ citySet.forEach(function(element) {
 
 const nutshells = document.querySelectorAll(".nutshell");
 
-/*window.onload = function() {
-	nutshells.forEach(function(nutshell, index) {
-		// get data centres
-		
-		const image = nutshell.querySelector(".image");
-		const temperature = nutshell.querySelector(".temp_val");
-		const town = nutshell.querySelector(".city");
-		const country = nutshell.querySelector(".country");
-		const longitude = nutshell.querySelector(".lon_val");
-		const latitude = nutshell.querySelector(".lat_val");
-		
-		// retrieve weather data
-		fetchData(randomCities[index]).then(result => {
-			image.src = `http://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png`;
-			temperature.innerHTML = Math.ceil(Number(result.main.temp) - 273.15);
-			town.innerHTML = result.name;
-			country.innerHTML = result.sys.country;
-			longitude.innerHTML = result.coord.lon;
-			latitude.innerHTML = result.coord.lat;
-			console.log(result);
-		});
-	});
-}*/
-
 function minors() {
 	nutshells.forEach(function(nutshell, index) {
 		// get data centres
